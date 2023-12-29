@@ -1,7 +1,7 @@
 title: Karthik Ragubathy # The title of the blog
 author: Karthik Ragubathy # Your name
 email: me@pkarthik.in # your email shown in the footer
-url: https://pkarthikr.github.io # this is your site's root address.
+url: https://pkarthikr.in # this is your site's root address.
 description: > # this means to ignore newlines until "show_excerpts:"
   Karthik's Weblog
 favicon: "./favicon.ico" # set the favicon of the site
