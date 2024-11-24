@@ -1,4 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://pkarthikr.in'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Karthik's Blog"
 theme = 'hugo-bearblog'
+author = "Karthik Ragubathy"
+copyright = "Copyright © 2024, Karthik Ragubathy."
