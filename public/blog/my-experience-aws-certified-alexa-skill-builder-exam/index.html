@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Experience Aws Certified Alexa Skill Builder Exam | Karthik&#39;s Blog</title>
+<meta name="title" content="My Experience Aws Certified Alexa Skill Builder Exam" />
+<meta name="description" content="If there’s something that brings me back memories of the good-old college days, it is definitely not the exams. From my school days, I do not have a good record of performing well in the exams and that record has extended all the way until the last exam I gave, 8 years back.
+So when my manager encouraged me to get certified in AWS Alexa Skill Builder Exam, I thought it would be a good way to revisit that experience again, albeit with a topic I am slightly well versed with." />
+<meta name="keywords" content="coding," />
+
+
+<meta property="og:url" content="http://localhost:1313/blog/my-experience-aws-certified-alexa-skill-builder-exam/">
+  <meta property="og:site_name" content="Karthik&#39;s Blog">
+  <meta property="og:title" content="My Experience Aws Certified Alexa Skill Builder Exam">
+  <meta property="og:description" content="If there’s something that brings me back memories of the good-old college days, it is definitely not the exams. From my school days, I do not have a good record of performing well in the exams and that record has extended all the way until the last exam I gave, 8 years back.
+So when my manager encouraged me to get certified in AWS Alexa Skill Builder Exam, I thought it would be a good way to revisit that experience again, albeit with a topic I am slightly well versed with.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2019-11-22T11:13:52-08:00">
+    <meta property="article:modified_time" content="2019-11-22T11:13:52-08:00">
+    <meta property="article:tag" content="Coding">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My Experience Aws Certified Alexa Skill Builder Exam">
+  <meta name="twitter:description" content="If there’s something that brings me back memories of the good-old college days, it is definitely not the exams. From my school days, I do not have a good record of performing well in the exams and that record has extended all the way until the last exam I gave, 8 years back.
+So when my manager encouraged me to get certified in AWS Alexa Skill Builder Exam, I thought it would be a good way to revisit that experience again, albeit with a topic I am slightly well versed with.">
+
+
+
+
+  <meta itemprop="name" content="My Experience Aws Certified Alexa Skill Builder Exam">
+  <meta itemprop="description" content="If there’s something that brings me back memories of the good-old college days, it is definitely not the exams. From my school days, I do not have a good record of performing well in the exams and that record has extended all the way until the last exam I gave, 8 years back.
+So when my manager encouraged me to get certified in AWS Alexa Skill Builder Exam, I thought it would be a good way to revisit that experience again, albeit with a topic I am slightly well versed with.">
+  <meta itemprop="datePublished" content="2019-11-22T11:13:52-08:00">
+  <meta itemprop="dateModified" content="2019-11-22T11:13:52-08:00">
+  <meta itemprop="wordCount" content="724">
+  <meta itemprop="keywords" content="Coding">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Karthik&#39;s Blog</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>My Experience Aws Certified Alexa Skill Builder Exam</h1>
+<p>
+  <i>
+    <time datetime='2019-11-22' pubdate>
+      22 Nov, 2019
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>If there’s something that brings me back memories of the good-old college days, it is definitely not the exams. From my school days, I do not have a good record of performing well in the exams and that record has extended all the way until the <a href="https://www.ets.org/gre">last exam I gave</a>, 8 years back.</p>
+<p>So when my <a href="https://twitter.com/prachimukhija">manager</a> encouraged me to get certified in AWS Alexa Skill Builder Exam, I thought it would be a good way to revisit that experience again, albeit with a topic I am slightly well versed with.</p>
+<p>I recently took the AWS Certified Alexa Skill Builder Exam and cleared it. This post outlines my experience preparing and giving the exam, and hope it helps others in preparing for the certification.</p>
+<p>Note : Due to the NDAs candidates sign, I cannot / will not share exact questions and will share a broad perspective of how to prepare for the exam.</p>
+<p><strong>Preparation</strong></p>
+<p>To get started with, download the exam guide and sample questions from the <a href="https://aws.amazon.com/certification/certified-alexa-skill-builder-specialty/">certification page</a>. If you have at-least 6 months of hands-on experience with building Alexa Skills, it would be a good time to take this certification. The exam guide has a table outlining the domain and the weightage percentage assigned to the sections as well. It also has a list of training and documentation link to prepare for the exam.</p>
+<p>Domain 1 and 2 focus more on Skill design and Voice-First Design. It would help to understand the best practices of skill building in general. Read about the limitations and features of what Alexa skills can do - and what would you do when given a certain use-case.</p>
+<p>The focus for Domain 3 is more on AWS services like Lambda, CloudFront, S3, CloudWatch and DynamoDB. If you have built a complex skill, that has a fair amount of users and have used some of these services, this section should be fairly easy. Read up on what different settings on these services mean and how you would use it when it scales.</p>
+<p>For the Domain 4, Skill Development - I would recommend spending a lot of time understanding the Request and Response JSON. Apart from preparing for the exam, understanding the JSON would also help you become a better skill builder.</p>
+<p>According to the exam guide, The exam (AXS-C01) tests a candidate’s competence using Alexa services and features that have been generally available (GA) in the United States/United Kingdom (US/UK) locales for a minimum of 6 months. So if you are a developer working on other locales, spend a bit of time understanding concepts like ISP, Amazon Pay integration and new APIs that are US/UK first.</p>
+<p>The last two domains focus more on testing the skill and publishing lifecycle. Experience with publishing skills, beta-testing them should help you coast through these domains easily.</p>
+<p>Now a lot of the questions should easily be answered, if you have been hands-on building skills for a while. However, I would recommend spending a good amount of time reading through the documentation and the guides to understand the finer aspects of skill building.</p>
+<p>The AWS Training portal also has a practice exam that I would highly recommend giving before the final exam. It will help you understand where you lack in preparation. I took the practice exam, and it highlighted that I can improve in the Skill Architecture section (Yeah, don’t let my title of being a Solutions Architect at Alexa fool you - there is always room for improvement.)</p>
+<p>The results of the exam arrive 3-5 days after the exam, while you get to know the overall result (Pass/Fail) immediately once the exam is finished. I passed the exams with a standardized test score of 919 out of 1000. The score report also has a breakdown of how you fared in every domain. This makes it the only exam I have ever given in my life where I scored above 90 percentile. The exam is not only a good way to assess your understanding of Alexa Skills but also helps you learn some new things about skill building in general.</p>
+<p>Overall it was a great experience preparing for the exam, and ultimately giving it as well. While preparing for the exam, I got to understand some finer aspects of Alexa Skill building and I hope this post helps you prepare for the exam.</p>
+
+</content>
+<p>
+  
+  <a href="http://localhost:1313/tags/coding/">#Coding</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

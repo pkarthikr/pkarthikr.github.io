@@ -7,14 +7,49 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2024, Karthik Ragubathy.</copyright>
-    <lastBuildDate>Sat, 23 Nov 2024 17:48:35 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2019 11:19:49 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My New Post</title>
-      <link>http://localhost:1313/blog/my-new-post/</link>
-      <pubDate>Sat, 23 Nov 2024 17:48:35 -0800</pubDate>
-      <guid>http://localhost:1313/blog/my-new-post/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/splash.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;</description>
+      <title>My Journey Into the Voice First World</title>
+      <link>http://localhost:1313/blog/my-journey-into-the-voice-first-world/</link>
+      <pubDate>Mon, 30 Dec 2019 11:19:49 -0800</pubDate>
+      <guid>http://localhost:1313/blog/my-journey-into-the-voice-first-world/</guid>
+      <description>&lt;p&gt;Every now and then, I get questions about opportunities in the Voice First space, and if they can make a career out of it. I thought it would be a good idea to detail my journey so far into the voice first world and the opportunities I came across, to give a broad answer to the questions I get.&lt;/p&gt;&#xA;&lt;p&gt;Late 2017, after I shut down the company I started - I was keen on being an individual contributor and building stuff myself.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Experience Aws Certified Alexa Skill Builder Exam</title>
+      <link>http://localhost:1313/blog/my-experience-aws-certified-alexa-skill-builder-exam/</link>
+      <pubDate>Fri, 22 Nov 2019 11:13:52 -0800</pubDate>
+      <guid>http://localhost:1313/blog/my-experience-aws-certified-alexa-skill-builder-exam/</guid>
+      <description>&lt;p&gt;If there’s something that brings me back memories of the good-old college days, it is definitely not the exams. From my school days, I do not have a good record of performing well in the exams and that record has extended all the way until the &lt;a href=&#34;https://www.ets.org/gre&#34;&gt;last exam I gave&lt;/a&gt;, 8 years back.&lt;/p&gt;&#xA;&lt;p&gt;So when my &lt;a href=&#34;https://twitter.com/prachimukhija&#34;&gt;manager&lt;/a&gt; encouraged me to get certified in AWS Alexa Skill Builder Exam, I thought it would be a good way to revisit that experience again, albeit with a topic I am slightly well versed with.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>When Curl Fails</title>
+      <link>http://localhost:1313/blog/when-curl-fails/</link>
+      <pubDate>Wed, 25 Jan 2017 10:17:13 -0800</pubDate>
+      <guid>http://localhost:1313/blog/when-curl-fails/</guid>
+      <description>&lt;p&gt;Every once in a while, as a programmer, you seemingly come upon a problem that flummoxes you, irritates you and takes you through a wide array of emotions - and in the end when you solve it, makes you look back and think, why did this issue even take so much time to fix.&lt;/p&gt;&#xA;&lt;p&gt;Here’s one from my diaries: I was working for a client which dealt with lots of financial data, building an app which dealt with peer to peer wallet system and phone recharges. The app’s backend API was built using a custom PHP framework.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Regexp With Mysql</title>
+      <link>http://localhost:1313/blog/regexp-with-mysql/</link>
+      <pubDate>Wed, 21 Dec 2016 10:14:04 -0800</pubDate>
+      <guid>http://localhost:1313/blog/regexp-with-mysql/</guid>
+      <description>&lt;p&gt;In one of the recent projects that I have been working on, I had to look for a word in a phrase - but the challenge was to rank an occurrence of the phrase higher when it’s an individual word as compared to when it was part of a word.&lt;/p&gt;&#xA;&lt;p&gt;For ex : Food Blogger should rate higher than Ardent Foodie, because in the first example - Food is an individual word as compared to latter where it is part of a whole word.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deploying With Deploybot</title>
+      <link>http://localhost:1313/blog/deploying-with-deploybot/</link>
+      <pubDate>Mon, 05 Dec 2016 10:09:40 -0800</pubDate>
+      <guid>http://localhost:1313/blog/deploying-with-deploybot/</guid>
+      <description>&lt;p&gt;I vividly remember the first time, I messed up a production server. It was my early days of being a programmer, and we had got our first client.&lt;/p&gt;&#xA;&lt;p&gt;Back then, my deployment strategy was basically to upload files using FTP and then run any commands on the server via the shell. During a routine deployment, I noticed a file which remained in the server, and in trying to remove it, I typed &lt;code&gt;sudo rm -rf /&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Autosaving in Xcode</title>
+      <link>http://localhost:1313/blog/autosaving-in-xcode/</link>
+      <pubDate>Thu, 24 Dec 2015 10:02:09 -0800</pubDate>
+      <guid>http://localhost:1313/blog/autosaving-in-xcode/</guid>
+      <description>&lt;p&gt;While working on a Swift Project recently, I spent ~ 4 hours adjusting a few pop-ups and fine tuning design for a screen. As it so happens, while working in the zone, I missed any committing and committed the code after my entire sprint.&lt;/p&gt;&#xA;&lt;p&gt;Now, the other day, I was helping out a colleague with git and explaining git checkout. As it turns out, my brain decided to remind myself of the command exactly while committing and I ended up typing&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

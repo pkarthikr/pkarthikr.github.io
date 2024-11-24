@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>When Curl Fails | Karthik&#39;s Blog</title>
+<meta name="title" content="When Curl Fails" />
+<meta name="description" content="Every once in a while, as a programmer, you seemingly come upon a problem that flummoxes you, irritates you and takes you through a wide array of emotions - and in the end when you solve it, makes you look back and think, why did this issue even take so much time to fix.
+Here’s one from my diaries: I was working for a client which dealt with lots of financial data, building an app which dealt with peer to peer wallet system and phone recharges. The app’s backend API was built using a custom PHP framework." />
+<meta name="keywords" content="coding," />
+
+
+<meta property="og:url" content="http://localhost:1313/blog/when-curl-fails/">
+  <meta property="og:site_name" content="Karthik&#39;s Blog">
+  <meta property="og:title" content="When Curl Fails">
+  <meta property="og:description" content="Every once in a while, as a programmer, you seemingly come upon a problem that flummoxes you, irritates you and takes you through a wide array of emotions - and in the end when you solve it, makes you look back and think, why did this issue even take so much time to fix.
+Here’s one from my diaries: I was working for a client which dealt with lots of financial data, building an app which dealt with peer to peer wallet system and phone recharges. The app’s backend API was built using a custom PHP framework.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2017-01-25T10:17:13-08:00">
+    <meta property="article:modified_time" content="2017-01-25T10:17:13-08:00">
+    <meta property="article:tag" content="Coding">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="When Curl Fails">
+  <meta name="twitter:description" content="Every once in a while, as a programmer, you seemingly come upon a problem that flummoxes you, irritates you and takes you through a wide array of emotions - and in the end when you solve it, makes you look back and think, why did this issue even take so much time to fix.
+Here’s one from my diaries: I was working for a client which dealt with lots of financial data, building an app which dealt with peer to peer wallet system and phone recharges. The app’s backend API was built using a custom PHP framework.">
+
+
+
+
+  <meta itemprop="name" content="When Curl Fails">
+  <meta itemprop="description" content="Every once in a while, as a programmer, you seemingly come upon a problem that flummoxes you, irritates you and takes you through a wide array of emotions - and in the end when you solve it, makes you look back and think, why did this issue even take so much time to fix.
+Here’s one from my diaries: I was working for a client which dealt with lots of financial data, building an app which dealt with peer to peer wallet system and phone recharges. The app’s backend API was built using a custom PHP framework.">
+  <meta itemprop="datePublished" content="2017-01-25T10:17:13-08:00">
+  <meta itemprop="dateModified" content="2017-01-25T10:17:13-08:00">
+  <meta itemprop="wordCount" content="510">
+  <meta itemprop="keywords" content="Coding">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Karthik&#39;s Blog</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>When Curl Fails</h1>
+<p>
+  <i>
+    <time datetime='2017-01-25' pubdate>
+      25 Jan, 2017
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Every once in a while, as a programmer, you seemingly come upon a problem that flummoxes you, irritates you and takes you through a wide array of emotions - and in the end when you solve it, makes you look back and think, why did this issue even take so much time to fix.</p>
+<p>Here’s one from my diaries: I was working for a client which dealt with lots of financial data, building an app which dealt with peer to peer wallet system and phone recharges. The app’s backend API was built using a custom PHP framework.</p>
+<p>After having built the system, I went to my client’s office to deploy the system on their homegrown servers. One thing that I should mention is, being a company that handles lot of financial data - the entire campus was very secure. Regular audits, Access only to authorised personnel. But what struck me odd was that even the computers were not connected to Internet - A team of 20 programmers shared two computers that connected to Internet, which they used when they wanted to research the issues they were working on.</p>
+<p>Having given a machine, I installed PHP on the servers and deployed my app - so I can start testing. This is where all the troubles started for me. For one of the methods, I had written some code to call client’s API to recharge their phone - but just no matter what happened, the API wouldn’t work.</p>
+<p>Looking at the code, the code was written in a simple CURL snippet</p>
+<pre><code>// create a new cURL resource$ch = curl_init();
+$ch = curl_init();
+// set URL and other appropriate options
+curl_setopt($ch, CURLOPT_URL, &quot;http://www.example.com/&quot;);
+curl_setopt($ch, CURLOPT_HEADER, 0);
+// grab URL and execute it
+curl_exec($ch);
+// close cURL resource, and free up system resources
+curl_close($ch);
+</code></pre>
+<p>But now here’s the funny part - the same URL was accessible via the browser, postman clients and everywhere. But through the code, it would simply refuse to work.</p>
+<p>After looking into the logs - and learning more about CURL and how it works - I added the curl_error function to see what is failing this bit of code.</p>
+<p><strong>Error 7 - Bad request. Could not connect to host.</strong></p>
+<p>Ah. So now we were getting somewhere. But there could be multiple reasons why we could not connect to the host - network dropping out, Internet not accessible and so on.</p>
+<p>That’s when it hit me like a flash of light - The entire computers at the client’s office were passing through a proxy. Now the URLs worked perfectly because the browsers were configured. I opened a terminal and typed</p>
+<p><strong>curl -v <a href="https://www.google.com">www.google.com</a></strong></p>
+<p>And truly enough - I got Error 7 again now. With a bit of more research - I was able to get it working. Adding these two lines to my code with the correct credentials got the code working.</p>
+<pre><code>curl_setopt($ch, CURLOPT_PROXY, &quot;proxyurl:proxyport&quot;);
+curl_setopt($ch, CURLOPT_PROXYUSERPWD, &quot;username:password&quot;);
+</code></pre>
+<p>And I ended my 12 hours of debugging this issue - being the more wiser about proxies and a deep understanding of CURL.</p>
+
+</content>
+<p>
+  
+  <a href="http://localhost:1313/tags/coding/">#Coding</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

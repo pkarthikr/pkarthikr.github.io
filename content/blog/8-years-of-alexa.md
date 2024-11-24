@@ -1,6 +1,7 @@
 +++
-title = "My New Post"
-date = "2024-11-23T17:48:35-08:00"
+title = "8 Years of Alexa"
+date = "2024-11-23T23:56:20-08:00"
+draft = true
 
 #
 # description is optional
@@ -10,4 +11,4 @@ date = "2024-11-23T17:48:35-08:00"
 tags = []
 +++
 
-![image](/images/splash.jpg)
+This is a page about »8 Years of Alexa«.
