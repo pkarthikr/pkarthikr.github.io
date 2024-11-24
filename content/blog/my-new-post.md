@@ -10,4 +10,4 @@ date = "2024-11-23T17:48:35-08:00"
 tags = []
 +++
 
-This is a page about »My New Post«.
+![image](/images/splash.jpg)

@@ -14,7 +14,7 @@
       <link>http://localhost:1313/blog/my-new-post/</link>
       <pubDate>Sat, 23 Nov 2024 17:48:35 -0800</pubDate>
       <guid>http://localhost:1313/blog/my-new-post/</guid>
-      <description>&lt;p&gt;This is a page about »My New Post«.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/splash.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
