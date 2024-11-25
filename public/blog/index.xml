@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Copyright © 2024, Karthik Ragubathy.</copyright>
-    <lastBuildDate>Mon, 30 Dec 2019 11:19:49 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 16:11:39 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Live Coding Setup on Twitch</title>
+      <link>http://localhost:1313/blog/my-live-coding-setup-on-twitch/</link>
+      <pubDate>Sun, 23 Aug 2020 16:11:39 -0800</pubDate>
+      <guid>http://localhost:1313/blog/my-live-coding-setup-on-twitch/</guid>
+      <description>&lt;p&gt;It’s been close to 6 months since I started streaming my coding adventures on Twitch. I thought this would be a good time to sit down and write about my experience streaming on Twitch and what I have learned so far.&lt;/p&gt;&#xA;&lt;h2 id=&#34;numbers&#34;&gt;Numbers&lt;/h2&gt;&#xA;&lt;p&gt;Till date, I have streamed for roughly 63 hours and have had ~270 hours of content being consumed. &lt;a href=&#34;https://twitter.com/kjevans2787&#34;&gt;Kevin Evans&lt;/a&gt; has been generous enough to subscribe to my stream, and that’s what contributes to a $7 figure (I am rich!). At some point, I aim to donate the money I earn through streaming to some charity, but thanks to the tax rules and conversion rates - it’s quite some time in the future.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Fibonacci Sequence</title>
+      <link>http://localhost:1313/blog/the-fibonacci-sequence/</link>
+      <pubDate>Tue, 10 Mar 2020 16:07:05 -0800</pubDate>
+      <guid>http://localhost:1313/blog/the-fibonacci-sequence/</guid>
+      <description>&lt;p&gt;Of late, I’ve been trying to get to the base of how algorithms and mathematics works in general. I’ve wanted to do this for a while because I have an inane fear of Mathematics, and I wanted to face it.&lt;/p&gt;&#xA;&lt;p&gt;This was also an effort to deep dive into the fundamentals of Computer Science, a topic dear to my heart, but something I’ve ignored for a while. I chanced upon &lt;a href=&#34;https://teachyourselfcs.com/&#34;&gt;Teach Yourself CS&lt;/a&gt;, a good roadmap for getting started with brushing up your CS fundamentals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Career Advice for Students</title>
+      <link>http://localhost:1313/blog/career-advice-for-students/</link>
+      <pubDate>Sat, 25 Jan 2020 11:24:03 -0800</pubDate>
+      <guid>http://localhost:1313/blog/career-advice-for-students/</guid>
+      <description>&lt;p&gt;At my job, I sometimes get the chance to meet budding student developers. After the workshops, their questions usually revolve around a career in tech and getting started in the industry. I thought it would be a good idea to list down what has worked for me, so I can share it the next time someone asks me for this.&lt;/p&gt;&#xA;&lt;p&gt;Before you start reading the post, I want you to keep in mind that I am a victim of confirmation bias. I believe that I was able to grasp some opportunities because I was the right person at the right place at the right time.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My Journey Into the Voice First World</title>
       <link>http://localhost:1313/blog/my-journey-into-the-voice-first-world/</link>
@@ -17,7 +38,7 @@
       <description>&lt;p&gt;Every now and then, I get questions about opportunities in the Voice First space, and if they can make a career out of it. I thought it would be a good idea to detail my journey so far into the voice first world and the opportunities I came across, to give a broad answer to the questions I get.&lt;/p&gt;&#xA;&lt;p&gt;Late 2017, after I shut down the company I started - I was keen on being an individual contributor and building stuff myself.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>My Experience Aws Certified Alexa Skill Builder Exam</title>
+      <title>My Experience : AWS Certified Alexa Skill Builder Exam</title>
       <link>http://localhost:1313/blog/my-experience-aws-certified-alexa-skill-builder-exam/</link>
       <pubDate>Fri, 22 Nov 2019 11:13:52 -0800</pubDate>
       <guid>http://localhost:1313/blog/my-experience-aws-certified-alexa-skill-builder-exam/</guid>

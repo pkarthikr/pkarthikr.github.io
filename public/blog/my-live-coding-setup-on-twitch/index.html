@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Live Coding Setup on Twitch | Karthik&#39;s Blog</title>
+<meta name="title" content="My Live Coding Setup on Twitch" />
+<meta name="description" content="It’s been close to 6 months since I started streaming my coding adventures on Twitch. I thought this would be a good time to sit down and write about my experience streaming on Twitch and what I have learned so far.
+Numbers
+Till date, I have streamed for roughly 63 hours and have had ~270 hours of content being consumed. Kevin Evans has been generous enough to subscribe to my stream, and that’s what contributes to a $7 figure (I am rich!). At some point, I aim to donate the money I earn through streaming to some charity, but thanks to the tax rules and conversion rates - it’s quite some time in the future." />
+<meta name="keywords" content="coding," />
+
+
+<meta property="og:url" content="http://localhost:1313/blog/my-live-coding-setup-on-twitch/">
+  <meta property="og:site_name" content="Karthik&#39;s Blog">
+  <meta property="og:title" content="My Live Coding Setup on Twitch">
+  <meta property="og:description" content="It’s been close to 6 months since I started streaming my coding adventures on Twitch. I thought this would be a good time to sit down and write about my experience streaming on Twitch and what I have learned so far.
+Numbers Till date, I have streamed for roughly 63 hours and have had ~270 hours of content being consumed. Kevin Evans has been generous enough to subscribe to my stream, and that’s what contributes to a $7 figure (I am rich!). At some point, I aim to donate the money I earn through streaming to some charity, but thanks to the tax rules and conversion rates - it’s quite some time in the future.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2020-08-23T16:11:39-08:00">
+    <meta property="article:modified_time" content="2020-08-23T16:11:39-08:00">
+    <meta property="article:tag" content="Coding">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="My Live Coding Setup on Twitch">
+  <meta name="twitter:description" content="It’s been close to 6 months since I started streaming my coding adventures on Twitch. I thought this would be a good time to sit down and write about my experience streaming on Twitch and what I have learned so far.
+Numbers Till date, I have streamed for roughly 63 hours and have had ~270 hours of content being consumed. Kevin Evans has been generous enough to subscribe to my stream, and that’s what contributes to a $7 figure (I am rich!). At some point, I aim to donate the money I earn through streaming to some charity, but thanks to the tax rules and conversion rates - it’s quite some time in the future.">
+
+
+
+
+  <meta itemprop="name" content="My Live Coding Setup on Twitch">
+  <meta itemprop="description" content="It’s been close to 6 months since I started streaming my coding adventures on Twitch. I thought this would be a good time to sit down and write about my experience streaming on Twitch and what I have learned so far.
+Numbers Till date, I have streamed for roughly 63 hours and have had ~270 hours of content being consumed. Kevin Evans has been generous enough to subscribe to my stream, and that’s what contributes to a $7 figure (I am rich!). At some point, I aim to donate the money I earn through streaming to some charity, but thanks to the tax rules and conversion rates - it’s quite some time in the future.">
+  <meta itemprop="datePublished" content="2020-08-23T16:11:39-08:00">
+  <meta itemprop="dateModified" content="2020-08-23T16:11:39-08:00">
+  <meta itemprop="wordCount" content="1533">
+  <meta itemprop="keywords" content="Coding">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Karthik&#39;s Blog</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>My Live Coding Setup on Twitch</h1>
+<p>
+  <i>
+    <time datetime='2020-08-23' pubdate>
+      23 Aug, 2020
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>It’s been close to 6 months since I started streaming my coding adventures on Twitch. I thought this would be a good time to sit down and write about my experience streaming on Twitch and what I have learned so far.</p>
+<h2 id="numbers">Numbers</h2>
+<p>Till date, I have streamed for roughly 63 hours and have had ~270 hours of content being consumed. <a href="https://twitter.com/kjevans2787">Kevin Evans</a> has been generous enough to subscribe to my stream, and that’s what contributes to a $7 figure (I am rich!). At some point, I aim to donate the money I earn through streaming to some charity, but thanks to the tax rules and conversion rates - it’s quite some time in the future.</p>
+<h2 id="inspiration">Inspiration</h2>
+<p>Before I streamed on my personal channel, I used to be regularly streaming on <a href="https://twitch.tv/amazonalexa">Amazon Alexa’s Twitch Channel</a> as a part of my work. But the streams I used to do on the official channel would be more prepared, and often would have at least a couple of weeks of preparation. On the contrary, my coding streams are totally unprepared and often me navigating uncharted territories.</p>
+<p>I was initially apprehensive, as this would mean showcasing to the entire world that I need to google even the minor things (how do I add request interceptors, javascript splice method?). In this matters, <a href="https://twitch.tv/jeffblankenburg">Jeff Blankenburg’s</a> streams provided the right motivation. I noticed when he used to get stuck, he would have the community help him and that gave me some confidence. After all, if <em>Jeff B</em> can go wrong - I guess I can as well? :)</p>
+<h2 id="content">Content</h2>
+<p>I started streaming about building Alexa Skills that I needed for myself and ended up building a few skills. As I use these skills in my daily life, I keep finding improvements and build on it in my streams. </p>
+<ul>
+<li><a href="https://github.com/pkarthikr/alexa-meal-planner">Meal Planner</a> - A Skill that plans our entire meal for the week.</li>
+<li><a href="https://github.com/pkarthikr/voice-greetings">Voice Greetings</a> - A Skill that allows your friends to send you short and sweet audio messages wishing you.</li>
+</ul>
+<p>I asked my audience what would they like to hear more through a Twitter poll and I saw a significant ask for exploring new Alexa Skills Kit APIs. So I sometimes explore a new API / release with just the public documentation. I’ve been able to cover the Timers API, Controls Framework and App to App Account Linking so far. These streams give me a way to look at our documentation / features from an outside developer’s perspective and take it back to the right team to highlight any improvements.</p>
+<p>As I stream more, I plan to take up ideas beyond Alexa Skills and get my hobby project ideas up and running.</p>
+<h2 id="schedule">Schedule</h2>
+<p>I did my first proper stream on 21st February and eased into a schedule in late March. I have been toying around with my schedule and am yet to find the right fit. I initially started doing late night streams (7:30 PM onwards) and found I would usually be very tired to focus on the streams.</p>
+<p>The perfect time for me seems to be starting at 5:30 PM, but thanks to the pandemic - I am yet to find the right day to stream on. And people attending my streams have been gracious enough to let me experiment and continue to come back. I hope to figure out a schedule pretty soon.</p>
+<h2 id="setup">Setup</h2>
+<p>It is important to have a decent setup before you start streaming. Your mileage may vary a lot depending on the computer you have, so take a call based on your setup. I stream from my Macbook Pro - 15 inch (2018 model) along with an extended monitor. I use an Yeti Blue Mike in Space Gray for my recording and streaming process and found it to be really good for all my audio purposes. I used to use the inbuilt mike for recording, and switching to the Yeti has been a day-and-night level of difference in the audio quality. I had to play around with the different mike settings and the placement before you get the perfect audio quality.</p>
+<p>For the camera, I use the Logitech C922 Camera. After the audio quality, the most amount of time I have spent went into getting the lighting and angle perfect so that my dark face seems visible and recognizable enough to the viewers.</p>
+<p>For the background, Arpita had this idea of getting our bookshelf between our sofa along with some props in there. We got the A &amp; K letterings from <a href="https://itsybitsy.in/">Itsy Bitsy</a> and I turn them on during my streams. It’s just a good addition to my stream and no amount of green screen magic is going to beat that.</p>
+<p>From what I’ve heard from other streamers, Streaming is way better on a powerful computer and with Windows as the Operating System. My current Mac has 16 GB RAM along with a 4 GB Radeon Pro Graphics Card and my streams are just fine. I do get the occasional hiccups here and there while streaming, but I’ve not seen a major difference and will continue to use my Mac for streaming purpose.</p>
+<p>Here’s my streaming setup :</p>
+<ul>
+<li>Macbook Pro - 15 inch, 2018 model</li>
+<li><a href="https://amzn.to/34Gu3nw">Dell SE2416H Monitor</a></li>
+<li><a href="https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english">Apple Magic Keyboard</a></li>
+<li><a href="https://amzn.to/3baY8xD">Yeti Blue Mike - Space Grey</a></li>
+<li><a href="https://www.logitech.com/en-us/product/c922-pro-stream-webcam">Logitech C922 Camera</a></li>
+<li><a href="https://amzn.to/2RD2iqA">Cable Manager</a></li>
+<li><a href="https://amzn.to/3l8oBS1">Callas Kitchen Stand</a></li>
+<li><a href="https://amzn.to/3gm0JGU">Lenovo USB Mouse</a></li>
+<li><a href="https://amzn.to/32lB3oK">Amazon Basics Laptop Stand</a></li>
+</ul>
+<h2 id="streamlabs">Streamlabs</h2>
+<p>I started out streaming with OBS, but soon ran into an issue where it would crash every time I opened Alexa Developer Console / AWS Console (which was a huge part of my stream). Luckily just around the time I started streaming, Streamlabs announced support for Mac OS, and that has luckily solved all my streaming issues. I start off the stream with a Starting soon scene that looks like this along with a peppy music track. This alerts followers that I am going live in a while and gives me some time to settle in before the stream (and set my hair).</p>
+<p>Apart from this, I have a scene with just the cam view and another view to share my desktop along with picture in picture mode. Sometimes, I need to take a break between the stream to get some water (shoutout to HydroHomies) and I put on a scene for that. I manually switch between my scenes and do not use any streaming deck for the same. I do not understand the appeal of streaming decks but I guess they would be better suited once you have a huge audience following and want to jazz up your streams easily.</p>
+<p>I recently setup a channel trailer and also added some panels for more information with the same design that I use for my scenes. All the designs were made by my wonderful partner, <a href="http://arpitakarthik.in/">Arpita</a>, who is a great illustrator and an UI/UX designer.</p>
+<h2 id="engagement">Engagement</h2>
+<p>When it comes to engaging viewers, I loved Jeff’s idea of building a Casino bot that your viewers can chat with in the Twitch chat. There are quite a few ideas I have in mind to keep my viewers engaged - but all of them are work in progress and might see the light of the day after a while.</p>
+<p>Streamlabs also allows you to setup GIFs to notify whenever a follow / raid / subscription event happens. I use that to thank new followers, any raiders &amp; subscribers.</p>
+<p>Apart from that, people who attend my streams sometimes help me out with debugging my code whenever I am stuck or ask questions, that I sometimes try and answer. One idea I’ve been toying with is to invite my viewers / other streaming friends to do pair programming sessions with and see what we can build together.</p>
+<p>One other way to make streaming fun is by raiding other streamers (which is basically sending your viewers to another channel). This helps your viewers find other streamers and helps building a sense of community as well.</p>
+<p>Here are a few streamers that I actively follow and would recommend you check out.</p>
+<ul>
+<li><a href="https://www.twitch.tv/letmypeoplecode">LetMyPeopleCode</a></li>
+<li><a href="https://www.twitch.tv/jeffblankenburg">Jeff Blankenburg</a></li>
+<li><a href="https://www.twitch.tv/sprucemooseaaa">Alison</a></li>
+<li><a href="https://www.twitch.tv/joemocode">JoeMoCode</a></li>
+<li><a href="https://www.twitch.tv/justjeffress">Justin Jeffress</a></li>
+<li><a href="https://www.twitch.tv/goldzulu">Goldzulu</a></li>
+<li><a href="https://www.twitch.tv/sohanmaheshwar">Sohan Maheshwar</a></li>
+<li><a href="https://www.twitch.tv/jbnunn">JBNunn</a></li>
+<li><a href="https://www.twitch.tv/kevinevans">Kevin Evans</a></li>
+</ul>
+<p>Apart from these amazing streamers, there are a few folks like Oxygenbox, Akhilesh, Ashish and a host of others who hang out in my streams and make it quite interactive. They are the main reason why I find streaming quite a bit of fun.</p>
+<p>What I love about streaming is, that it gives me the opportunity to stick to a consistent schedule to code and learn something new. And while doing so, I get to build a small community who are super interested in my work.</p>
+<p>I’ve found streaming to be a good way to build content where I can explain my thought process and do monotonous things like installing libraries. Sometimes my viewers would enter into conversations, and we would have long unwinding conversations about random things. For any other filtered and prepared content, I intend to stick with my <a href="https://www.youtube.com/channel/UC_3hmv5NVrruhuukWR6UFbQ">Youtube Channel</a> and this blog.</p>
+<p>I hope you found this post informative and hopefully helps someone looking to stream an insight into how I do it. If you have any questions on streaming, reach out to me on <a href="https://twitter.com/pkarthikr">Twitter</a> and I will be happy to help!</p>
+
+</content>
+<p>
+  
+  <a href="http://localhost:1313/tags/coding/">#Coding</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

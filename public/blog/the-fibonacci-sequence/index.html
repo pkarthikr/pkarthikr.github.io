@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Fibonacci Sequence | Karthik&#39;s Blog</title>
+<meta name="title" content="The Fibonacci Sequence" />
+<meta name="description" content="Of late, I’ve been trying to get to the base of how algorithms and mathematics works in general. I’ve wanted to do this for a while because I have an inane fear of Mathematics, and I wanted to face it.
+This was also an effort to deep dive into the fundamentals of Computer Science, a topic dear to my heart, but something I’ve ignored for a while. I chanced upon Teach Yourself CS, a good roadmap for getting started with brushing up your CS fundamentals." />
+<meta name="keywords" content="coding," />
+
+
+<meta property="og:url" content="http://localhost:1313/blog/the-fibonacci-sequence/">
+  <meta property="og:site_name" content="Karthik&#39;s Blog">
+  <meta property="og:title" content="The Fibonacci Sequence">
+  <meta property="og:description" content="Of late, I’ve been trying to get to the base of how algorithms and mathematics works in general. I’ve wanted to do this for a while because I have an inane fear of Mathematics, and I wanted to face it.
+This was also an effort to deep dive into the fundamentals of Computer Science, a topic dear to my heart, but something I’ve ignored for a while. I chanced upon Teach Yourself CS, a good roadmap for getting started with brushing up your CS fundamentals.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2020-03-10T16:07:05-08:00">
+    <meta property="article:modified_time" content="2020-03-10T16:07:05-08:00">
+    <meta property="article:tag" content="Coding">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Fibonacci Sequence">
+  <meta name="twitter:description" content="Of late, I’ve been trying to get to the base of how algorithms and mathematics works in general. I’ve wanted to do this for a while because I have an inane fear of Mathematics, and I wanted to face it.
+This was also an effort to deep dive into the fundamentals of Computer Science, a topic dear to my heart, but something I’ve ignored for a while. I chanced upon Teach Yourself CS, a good roadmap for getting started with brushing up your CS fundamentals.">
+
+
+
+
+  <meta itemprop="name" content="The Fibonacci Sequence">
+  <meta itemprop="description" content="Of late, I’ve been trying to get to the base of how algorithms and mathematics works in general. I’ve wanted to do this for a while because I have an inane fear of Mathematics, and I wanted to face it.
+This was also an effort to deep dive into the fundamentals of Computer Science, a topic dear to my heart, but something I’ve ignored for a while. I chanced upon Teach Yourself CS, a good roadmap for getting started with brushing up your CS fundamentals.">
+  <meta itemprop="datePublished" content="2020-03-10T16:07:05-08:00">
+  <meta itemprop="dateModified" content="2020-03-10T16:07:05-08:00">
+  <meta itemprop="wordCount" content="432">
+  <meta itemprop="keywords" content="Coding">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Karthik&#39;s Blog</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>The Fibonacci Sequence</h1>
+<p>
+  <i>
+    <time datetime='2020-03-10' pubdate>
+      10 Mar, 2020
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Of late, I’ve been trying to get to the base of how algorithms and mathematics works in general. I’ve wanted to do this for a while because I have an inane fear of Mathematics, and I wanted to face it.</p>
+<p>This was also an effort to deep dive into the fundamentals of Computer Science, a topic dear to my heart, but something I’ve ignored for a while. I chanced upon <a href="https://teachyourselfcs.com/">Teach Yourself CS</a>, a good roadmap for getting started with brushing up your CS fundamentals.</p>
+<p>As a part of this roadmap, I’ve been solving programs on Project Euler, Hacker Rank and other competitive coding websites. And almost all programs will have a challenge that includes the <a href="https://en.wikipedia.org/wiki/Fibonacci_number">Fibonacci Sequence</a>.</p>
+<p>For ex : Here is Project Euler’s 2nd Program</p>
+<blockquote>
+<p>Each new term in the Fibonacci sequence is generated by adding the previous two terms. By starting with 1 and 2, the first 10 terms will be:</p>
+<p>1, 2, 3, 5, 8, 13, 21, 34, 55, 89,</p>
+<p>By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.</p>
+</blockquote>
+<p>and here’s how I solved it</p>
+<pre><code>    i = 0
+    j = 1
+    sum = 0
+    num = 0
+    while (num &lt; 4000000):    
+         num = i + j    
+         i = j    
+         j = num    
+         if num % 2 == 0:        
+         sum = sum + num    
+    print(&quot;Final Sum is&quot;)
+    print(sum)
+</code></pre>
+<p>If you can overlook my use of the while loop and my amateur Python skills, this looks like a good start. However while working on this program, I went on a rabbit hole, trying to read more about Fibonacci Sequence.</p>
+<p>That’s when I stumbled upon the different applications for the sequence. One fun use case is <a href="https://en.wikipedia.org/wiki/Planning_poker">Planning Poker</a>, where participants in a Scrum meeting are given the sequence cards for estimation. But what enchanted me was the fact that the sequence appears in <a href="https://en.wikipedia.org/wiki/Fibonacci_number#Nature">biological settings</a> as well. For ex: Some flowers are pentagonal because of the arrangement of spirals.</p>
+<p>And it also extends into genealogy as well. Bees for that matter.</p>
+<ul>
+<li>If an egg is laid by an unmated female, it hatches a male or drone bee.</li>
+<li>If, however, an egg was fertilized by a male, it hatches a female.</li>
+</ul>
+<p>And thus, if one were to trace the ancestory of any male bee, he has 1 parent bee, 2 grandparents, 3 great grand parents and so on.</p>
+<p>While learning all these facts about how mathematics and nature are interlocked, I chanced upon a Rene Descartes quote</p>
+<p><strong>In my opinion, everything happens in nature in a mathematical way.</strong></p>
+<p>Indeed.</p>
+
+</content>
+<p>
+  
+  <a href="http://localhost:1313/tags/coding/">#Coding</a>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 +++
-title = "My Experience Aws Certified Alexa Skill Builder Exam"
+title = "My Experience : AWS Certified Alexa Skill Builder Exam"
 date = "2019-11-22T11:13:52-08:00"
 
 #
