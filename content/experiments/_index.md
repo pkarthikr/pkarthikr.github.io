@@ -1,6 +1,5 @@
 +++
 title = 'Experiments'
-date = '2026-11-04T09:00:00-08:00'
 +++
 
 Little things I've built for fun, to learn something, or to scratch an itch.
