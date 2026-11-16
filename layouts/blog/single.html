@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ if not .Params.menu }}
+<p><a href="{{ "blog" | relURL }}">← All posts</a></p>
+<h1>{{ .Title }}</h1>
+<p>
+  <i>
+    <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+      {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+    </time>
+  </i>
+  · {{ .ReadingTime }} min read
+  {{ with .GetTerms "tags" }}·{{ range . }} <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>{{ end }}{{ end }}
+</p>
+{{ end }}
+<content>
+  {{ .Content }}
+</content>
+{{ partial "subscribe.html" . }}
+<nav class="row">
+  {{ with .PrevInSection }}<a href="{{ .Permalink }}">← {{ .Title }}</a>{{ else }}<span></span>{{ end }}
+  {{ with .NextInSection }}<a href="{{ .Permalink }}">{{ .Title }} →</a>{{ end }}
+</nav>
+{{ end }}

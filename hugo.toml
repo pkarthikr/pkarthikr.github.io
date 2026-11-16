@@ -4,3 +4,18 @@ title = "Karthik's Blog"
 theme = 'hugo-bearblog'
 author = "Karthik Ragubathy"
 copyright = "Copyright © 2024, Karthik Ragubathy."
+
+[params]
+  # Form endpoint from your newsletter service. While unset, the Subscribe
+  # link and the email box stay hidden.
+  # subscribeAction = "https://buttondown.com/api/emails/embed-subscribe/<username>"
+
+[[menus.footer]]
+  name = "GitHub"
+  url = "https://github.com/pkarthikr"
+  weight = 1
+
+[[menus.footer]]
+  name = "RSS"
+  url = "/blog/index.xml"
+  weight = 2

@@ -1,0 +1,11 @@
+{{ with site.Params.subscribeAction }}
+<section id="subscribe">
+  <h3>{{ if eq $.Type "blog" }}Enjoyed this? Get the next one by email.{{ else }}Get new posts by email.{{ end }}</h3>
+  <p>I write when I've built or learned something worth sharing. A few emails a year.</p>
+  <form action="{{ . }}" method="post">
+    <input type="email" name="email" aria-label="Email address" placeholder="you@example.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+  <p><small>No spam. Unsubscribe anytime.</small></p>
+</section>
+{{ end }}

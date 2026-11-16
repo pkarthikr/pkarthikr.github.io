@@ -1,0 +1,6 @@
+<nav>
+  {{ range .Site.Menus.footer }}
+  <a href="{{ .URL }}">{{ .Name }}</a>
+  {{ end }}
+</nav>
+{{ if ne .Site.Params.hideMadeWithLine true }}<span>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a></span>{{ end }}

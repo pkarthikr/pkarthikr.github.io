@@ -8,3 +8,6 @@
 {{ with .Site.GetPage "/experiments" }}
 <a href="{{ "experiments" | relURL }}">Experiments</a>
 {{ end }}
+{{ if site.Params.subscribeAction }}
+<a href="{{ "subscribe" | relURL }}">Subscribe</a>
+{{ end }}
