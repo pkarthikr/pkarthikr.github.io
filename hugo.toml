@@ -6,9 +6,8 @@ author = "Karthik Ragubathy"
 copyright = "Copyright © 2024, Karthik Ragubathy."
 
 [params]
-  # Form endpoint from your newsletter service. While unset, the Subscribe
-  # link and the email box stay hidden.
-  # subscribeAction = "https://buttondown.com/api/emails/embed-subscribe/<username>"
+  # Buttondown form endpoint. Remove to hide the Subscribe link and email box.
+  subscribeAction = "https://buttondown.com/api/emails/embed-subscribe/pkarthikr"
 
 [[menus.footer]]
   name = "GitHub"
