@@ -1,5 +1,8 @@
 {{ define "main" }}
-{{ .Content }}
+<div class="intro">
+  <img src="{{ "images/avatar.jpg" | relURL }}" width="88" height="88" alt="">
+  <div>{{ .Content }}</div>
+</div>
 {{ with .Site.GetPage "/blog" }}
 <div class="row">
   <h3>Recent writing</h3>
