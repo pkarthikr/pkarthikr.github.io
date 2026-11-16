@@ -8,7 +8,6 @@ title = 'Home'
 Welcome to my little corner on the internet. I love building stuff, and writing about them. 
 This blog is a means of documenting some of those things lest I forget about them. 
 
-I currently work as a Solutions Architect at Amazon, and live in Bellevue, WA. 
-When I am not working, I would be found spending time with my 3 year old daughter and my wife. 
+I currently work as a Solutions Architect at Amazon.
 
 If you'd like to get in touch - please drop me an email at me[at]pkarthik.in.
